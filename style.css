@@ -1,0 +1,94 @@
+* {
+	box-sizing:border-box;
+	margin:0;
+	padding: 0;
+}
+/* EJERCICIO1 */
+.section1 {
+	padding:10px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	gap:20px;
+	border: 1px black solid;
+}
+.section2 {
+	padding:10px;
+	/* orden de cada section */
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+		gap:20px;
+	/* gap para que haya espacio entre sus items */
+}
+#btntextarea {
+	display: flex;
+}
+.input {
+	/* INPUTS FLEXIBLES PARA PODERLOS CENTRAR	 */
+	display:flex;
+	align-items:center;
+}
+.label {
+	display:flex;
+		justify-content:center;
+	/* ajustamos todos los label al centro con margen de 5px para que no queden pegados al input */
+	margin:5px;
+}
+/* EJERCICIO2 */
+textarea:valid {
+	border-color: #6af566;
+}
+/* valido es verde */
+textarea:invalid {
+	border-color: #f56f66;
+}
+/* el textarea es invalido se pone rojo */
+/* animacion al final de la hoja de estilos o sino no ejecuta */
+/* EJERCICIO4 */
+.section3 {
+	padding:10px;
+	display:flex;
+	/* orden de cada section */
+	flex-direction:column;
+	align-items:center;
+	gap:20px;
+	background-color:aquamarine;
+}
+/* EJERCICIO5 */
+.visor img {
+	/* es el visor de la imagen de muestra con el borde y margin auto para que quede bien centrado */
+	margin:auto;
+	border:solid 2px black;
+	width:540px;
+	justify-content:center;
+	padding:20px;
+	text-align:center;
+}
+.previo {
+	display:flex;
+		width:130px;
+	height:115px;
+}
+.miniaturas {
+		display:flex;
+	align-items:center;
+	gap:60px;
+	justify-content:center;
+	margin:20px;
+	cursor:pointer;
+}
+@keyframes shake {
+	0%,100% {
+		transform:translateX(0);
+	}
+	25% {
+		transform:translateX(8px);
+	}
+	75% {
+		transform:translateX(-8px);
+	}
+}
+textarea:invalid {
+	animation: shake 0.2s 0s 3;
+}

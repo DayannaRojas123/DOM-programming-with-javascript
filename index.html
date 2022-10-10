@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Talento coex DR">
+<meta name="description" content="diseño web con coex">
+<meta name="keywords" content="aprende logica, html, css, javascript, bd, vue.js, laravel"/>
+<title>DAYANNA ROJAS</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" type="image" sizes="32x32" href="./pestanas.png">
+<a href="https://www.flaticon.es/iconos-gratis/pestanas" title="pestanas iconos"></a>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+<header>
+<h4 style="text-align:center">EJERCICIO 1 </h4>
+<!-- //ejercicio 1 de dom -->
+</header>
+<main>
+<form class="form1">
+	<section class="section1">
+	<div class="opciones">
+		<select id="select">
+			<!--  selector -->
+			<option value="f5d066">AMARILLO</option>
+			<option value="669cf5">AZUL</option>
+			<option value="f56f66">ROJO</option>
+			<option value="6af566">VERDE</option>
+			<option value="080908">NEGRO</option>
+		</select>
+	</div>
+	<div class="numero">
+		<!-- //input class="input" del numero del indice -->
+		<label class="label" for="num">Number Index Selected:</label class="label">
+		<input class="input" type="text" id="number">
+	</div>
+	<div class="texto">
+		<!-- //input class="input" del texto de la opcion -->
+		<label class="label" for="texto">Text selected:</label class="label">
+		<input class="input" type="text" id="texto">
+	</div>
+	<div class="tipo">
+		<!-- //input class="input" del valor del color -->
+		<label class="label" for="valor">Color Value Selected:</label class="label">
+		<input class="input" type="text" id="valor">
+	</div>
+	<div class="color">
+		<!-- //input class="input" del color -->
+		<input class="input" type="color" id="colores">
+	</div>
+	</section>
+	<section class="section2">
+	<h4>EJERCICIO 2</h4>
+	<!-- //ejercicio 2 de dom -->
+	<div>
+		<div>
+			<label class="label" for="curriculum">Descripción</label class="label">
+		</div>
+		<textarea name="" id="curriculum" required cols="100" rows="5"></textarea>
+		<!-- //CONTROL TEXTAREA 	-->
+		<input class="input" type="button" id="btntextarea" value="validar">
+		<!-- //BOTON DE VALIDAR -->
+	</div>
+	</section>
+	<section class="section2">
+	<h4>EJERCICIO 3</h4>
+	<!-- //ejercicio 3 de dom -->
+	<p>
+		EXPRESIONES REGULARES
+	</p>
+	<label class="label" for="textcar">EJEMPLO EXPRESION REGULAR: LETRA+VOCAL</label class="label">
+	<input class="input" type="text" id="textcar" placeholder="ingrese texto">
+	<!-- //INPUT class="input" PARA INGRESAR EL TEXTO -->
+	<p id="rtaregular1">
+	</p>
+	<input class="input" id="btnregular1" type="button" value="validar">
+	<!--  //BOTON PARA VALIDAR
+ -->
+	<label class="label" for="textreg">EJEMPLO EXPRESION REGULAR: LETRA+VOCAL+NUMERO+LONGITUD</label class="label">
+	<input class="input" type="text" id="textreg" placeholder="ingrese texto">
+	<!-- INPUT class="input" TIPO TEXTO PARA INGRESAR Y CONTAR LONGITUD -->
+	<p id="rtaregular2">
+	</p>
+	<input class="input" id="btnregular2" type="button" value="validar">
+	<label class="label" for="textnumber">EJEMPLO EXPRESION REGULAR: NUMEROS</label class="label">
+	<input class="input" type="number" id="textnumber" placeholder="ingrese texto">
+	<!-- INPUT class="input" TIPO NUMERICO PARA SOLO CARACTERES NUNMERICOS -->
+	<p id="rtaregular3">
+	</p>
+	<input class="input" id="btnregular3" type="button" value="validar">
+	</section>
+	<section class="section3">
+	<h4>EJERCICIO 4</h4>
+	<!-- //ejercicio 4 de dom -->
+	<p>
+		EVENTOS DEL TECLADO
+	</p>
+	<label class="label" for="textoletra">INGRESE UN TEXTO</label class="label">
+	<!-- ingresa el texto que vamos a mostrar en el alert -->
+	<input class="input" type="text" id="textoletra">
+	<p id="rtatecla1">
+		 muestra una alerta en pantalla cada vez que ingreso un caracter en la caja de texto
+	</p>
+	<input class="input" id="btnteclado1" type="button" value="validar">
+	<!-- boton para activar funcion en main -->
+	<label class="label" for="maxcaracter">EVENTO KEYUP - INGRESE UN TEXTO (MAX 50 CARACTERES)</label class="label">
+	<input class="input" type="text" id="maxcaracter" maxlength="50">
+	<!-- input class="input" tipo texto con validacion de un maximo de 50 para input class="input":disable cuando cumpla el max. -->
+	<p id="rtatecla2">
+		CANTIDAD DE CARACTERES DISPONIBLES: <span id="cantidad" style="color:rebeccapurple">50</span>
+	</p>
+	</section>
+	<section class="section2">
+	<h4>EJERCICIO 5</h4>
+	<!-- //ejercicio 5 de dom -->
+	<p>
+		GALERIA
+	</p>
+	<div class="visor">
+		<img src="./cdn-3.expansion.webp" id="pantalla">
+		<!-- primer div con la imagen de muestra -->
+	</div>
+	<div class="miniaturas">
+		<!-- en este div almacenamos las imagenes con las que vamos a hacer los cambios  -->
+		<div class="previo">
+			<img src="./luca-bravo-XJXWbfSo2f0-unsplash.jpg" name="primera" onclick="muestra('primera')">
+		</div>
+		<div class="previo">
+			<img src="./maxim-hopman-IayKLkmz6g0-unsplash.jpg" onclick="muestra(2)">
+		</div>
+		<div class="previo">
+			<img src="./alexander-shatov-mr4JG4SYOF8-unsplash.jpg" onclick="muestra(3)">
+		</div>
+		<div class="previo">
+			<img src="./anton-maksimov-5642-su-v8EDIxHlZWU-unsplash.jpg" onclick="muestra(4)">
+		</div>
+		<!-- con el onclick activamos la funcion muestra del js cada vez que hagamos click o tambien con el addeventlistener  -->
+		</section>
+		<section class="section2">
+		<h4>EJERCICIO 6</h4>
+		<p>
+			creacion de nodos
+		</p>
+		<!-- //ejercicio 6 nodos-->
+		<div class="botones">
+			<input id="btncrear" class="btn btn-primary" type="button" value="crear">
+			<!-- boton PARA CREAR NODOS -->
+			<input id="btncopiar" class="btn btn-primary" type="button" value="copiar">
+			<!-- BOTON PARA COPIAR NODOS -->
+			<input id="btneliminar" class=" btn btn-outline-danger" type="button" value="eliminar">
+			<!-- BOTON PARA ELIMINAR NODOS -->
+		</div>
+		<div id="copia">
+			<p id="nuevotexto">
+			</p>
+			<!-- UN PARRAFO DONDE ALMACENAMOS EL TEXTO QUE SALDRA AL CREAR EL NODO -->
+		</div>
+		</section>
+	</form>
+	<!-- ----------------------------------------------------------------------------- -->
+	<section class="section2">
+	<h4> EJERCICIO 7 - crear una lista de elementos</h4>
+	<!-- //ejercicio 7 nodos-->
+	<div class="container" style="text-align:center; justify-content: center">
+		<div class="card card-body cols-sm-12" id="principal">
+			<h4 class="title fs-1">Agregar elementos: </h4>
+			<form class="form col-auto mb-3" id="frmlista">
+				<!-- CREAMOS FORMULARIO PARA VALIDAR LOS INPUT class="input"S TIPO BOTONES -->
+				<input type="text" id="textelemento" class="form-control" placeholder="escribir el elemento">
+				<input type="submit" value="agregar" class="btn btn-light btn-outline-primary">
+			</form>
+			<h4 class="tittle fs-2">ELEMENTOS:</h4>
+			<ul id="elementos" class="list-group">
+				<!-- CREA UN LISTADO APLICANDO BOOSTRAP PARA CARGAR LOS ELEMENTOS Y DENTRO DE CADA VIÑETA UN BOTON PERTENECIENTE A ELLA PARA PODER REALIZAR LA FUNCION AL LI SEGUN EL BUTTON -->
+				<li class="list-group-item">elemento1 <button class="btn btn-light btn-outline-danger btn-sm float-end delete">
+				x </button>
+				</li>
+				<li class="list-group-item">elemento2 <button class="btn btn-light btn-outline-danger btn-sm float-end delete">
+				x </button>
+				</li>
+				<li class="list-group-item">elemento3 <button class="btn btn-light btn-outline-danger btn-sm float-end delete">
+				x </button>
+				</li>
+				<li class="list-group-item">elemento4 <button class="btn btn-light btn-outline-danger btn-sm float-end delete">
+				x </button>
+				<!-- el button es tipo delete para poder eliminar -->
+				</li>
+			</ul>
+		</div>
+	</div>
+	</section>
+	</main>
+	<footer>
+	<p style="text-align:center;margin: 20px;">
+		 Desarollado por: &copy Dayanna Valentina Rojas Rey
+	</p>
+	</footer>
+	<script src="./main.js"></script>
+	</body>
+	</html>
